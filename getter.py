@@ -16,7 +16,7 @@ def getText(dayOfWeek):
 
     # add asterisk for formatting
     alltext = td_all[converted_day_of_week].text
-    newtext = alltext[:0] + '* ' + alltext[0:]
-    newertext = newtext.replace("\n", "\n* ",)
+    newtext = alltext[:0] + 'DAGENS LUNCH @ NYA ETAGE\n* ' + alltext[0:]
+    newertext = newtext.replace("\n", "\n\n* ",)
 
     return newertext
