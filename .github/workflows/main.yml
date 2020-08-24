@@ -22,7 +22,7 @@ jobs:
     # required to access files on github repo (.py files etc)
     - uses: actions/checkout@v2
     # Runs a set of commands using the runners shell
-    - name: Run sender.py
+    - name: run sender.py
       env: # Or as an environment variable
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
         CHAT_ID: ${{ secrets.CHAT_ID }}
