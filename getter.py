@@ -2,6 +2,7 @@
 import urllib
 from bs4 import BeautifulSoup
 
+
 def getText(dayOfWeek):
 
     request_url = urllib.urlopen('https://www.nyaetage.se/veckans-meny?')
@@ -13,4 +14,9 @@ def getText(dayOfWeek):
     # table data is seperated by five
     converted_day_of_week = dayOfWeek * 5
 
-    return td_all[converted_day_of_week].text
+	# add asterisk for formatting
+	alltext = td_all[converted_day_of_week].text
+	newtext = alltext[:0] + '* ' + alltext[0:]
+	newertext = newtext.replace("\n", "\n* ",)
+
+    return newertext
