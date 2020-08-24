@@ -31,3 +31,4 @@ jobs:
         pip install requests
         pip install bs4
         python sender.py
+        echo "done with yml"
