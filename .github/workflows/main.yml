@@ -31,5 +31,5 @@ jobs:
         pip install requests
         pip install bs4
         pip install python-decouple
-        python runner.py
+        python sender.py
         echo "Done with Script"
