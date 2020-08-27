@@ -2,7 +2,6 @@
 import urllib
 from bs4 import BeautifulSoup
 
-
 def getText(dayOfWeek):
 
     request_url = urllib.urlopen('https://www.nyaetage.se/veckans-meny?')
