@@ -26,7 +26,7 @@ def main():
     receivedtext = getText(dayOfWeek)
 
     # send a message to chat
-    res = send_message(BOT_TOKEN, CHAT_ID, "no problem Sebastian :)")
+    res = send_message(BOT_TOKEN, CHAT_ID, receivedtext)
 
     # get message id from response
     message_id = res['result']['message_id']
