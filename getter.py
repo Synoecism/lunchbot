@@ -9,6 +9,8 @@ def getText(dayOfWeek):
     soup = BeautifulSoup(read_content, 'html.parser')
 
     td_all = soup.find_all('td')
+    print(td_all.length)
+    print(td_all)
 
     # table data is seperated by five
     converted_day_of_week = dayOfWeek * 5
