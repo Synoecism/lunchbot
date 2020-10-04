@@ -1,7 +1,6 @@
 import requests
 
 # get chat_id
-# https://api.telegram.org/bot1368915163:AAEX59B8GlHnaPN--BGM5I0oaylvx6el8ac/getUpdates
 
 def send_message(token, chatid, message):
 
