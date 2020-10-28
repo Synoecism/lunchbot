@@ -1,13 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 # https://crontab.guru/
 
-name: sender
+name: weekly_sender
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   schedule:
-    - cron: '0 8 * * 1-5'
+    - cron: '0 20 * * 7'
   push:
     branches:
       - master
@@ -31,10 +31,10 @@ jobs:
         pip install requests
         pip install bs4
         pip install python-decouple
-        python sender.py
+        python weeklySender.py
         echo "Done with Script"
     - name: upload messageid
       uses: actions/upload-artifact@v2
       with:
-        name: messageid
-        path: message.txt
+        name: weeklyid
+        path: weeklyid.txt
