@@ -8,9 +8,6 @@ name: daily_deleter
 on:
   schedule:
     - cron: '0 23 * * 1-5'
-  push:
-    branches:
-      - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
