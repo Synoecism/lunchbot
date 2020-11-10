@@ -17,9 +17,9 @@ jobs:
     # required to access files on github repo (.py files etc)
     - uses: actions/checkout@v2
     - name: download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: dailyId
+      uses: actions/download-artifact@v2
+      with:
+        name: dailyId
     # Runs a set of commands using the runners shell
     - name: runner
       env: # Or as an environment variable
