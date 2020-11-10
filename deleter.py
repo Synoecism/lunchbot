@@ -21,7 +21,7 @@ def main():
 
     # open txt file
     #file = open("message.txt","r")
-    print(test)
+    print("test")
     r = requests.get('https://api.github.com/repos/Synoecism/lunchbot?access_token=fdedd85c6618ed2a03cf90e4f8449926c0715f85/actions/artifacts')
     print(r.status_code)
 
