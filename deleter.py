@@ -20,13 +20,16 @@ def main():
         print("Status: using local variables")
 
     # open txt file
-    file = open("message.txt","r")
+    #file = open("message.txt","r")
+    print(test)
+    r = requests.get('https://api.github.com/repos/Synoecism/lunchbot?access_token=fdedd85c6618ed2a03cf90e4f8449926c0715f85/actions/artifacts')
+    print(r.status_code)
 
     # read message id from file
-    message_id = file.read()
+    #message_id = file.read()
 
     # delete message by id
-    delete_message(BOT_TOKEN,CHAT_ID,message_id)
+    #delete_message(BOT_TOKEN,CHAT_ID,message_id)
 
 if __name__ == "__main__":
     main()
