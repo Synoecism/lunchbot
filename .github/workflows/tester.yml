@@ -23,4 +23,9 @@ jobs:
         CHAT_ID: ${{ secrets.CHAT_ID }}
       run: |
         ls
+        pip install wheel
+        pip install requests
+        pip install bs4
+        pip install python-decouple
         python deleter.py
+        ls
